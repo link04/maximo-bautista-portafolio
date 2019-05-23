@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(36, 37, 40); /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(237, 239, 240, 0.93), #282c34);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.welcome {
+  background-color: rgb(26, 38, 39);
+  color: white;
+  font-weight: 300;
+  font-size: calc(20px + 2vmin);
+}
+
+.name-color{
+  color: rgb(149,183,192)
+}
+
+.next-button {
+  text-decoration: none;
+  border: solid 0.5px;
+  padding: 10px;
+  font-size: 20px;
+  color:white;
+}

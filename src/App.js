@@ -1,12 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './assets/css/index.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <section className=" welcome">
+        <p>
+          <span class="name-color" >Maximo Bautista.</span>
+          <br/>
+          I'm a Full-stack Web Developer
+        </p>
+
+
+        <a
+          className="next-button"
+          href="#bio"
+        >
+          Explore More
+        </a>
+      </section>
+      <section className="" id="bio">
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,7 +33,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </section>
     </div>
   );
 }
