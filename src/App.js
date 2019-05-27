@@ -39,13 +39,12 @@ class App extends React.Component {
       return 'active'
     } else if(this.state.actualViewScrolled >= 60 && this.state.actualViewScrolled <= 85 && linkName === 'projects'){
       return 'active'
-    } else if(this.state.actualViewScrolled >= 85 && this.state.actualViewScrolled <= 100 &&  linkName === 'contact'){
+    } else if(this.state.actualViewScrolled >= 85 && linkName === 'contact'){
       return 'active'
     }
   }
 
 render(){
-  // console.log(this.state);
     return (
       <div className="container">
         <Sidebar activeLink={this.activeLink} />

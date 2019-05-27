@@ -11,12 +11,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(67, 69, 73); /* For browsers that do not support gradients */
   overflow: hidden;
 
 }
 
 .container {
+  background-color: rgb(96, 172, 179); /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(96, 172, 179), rgb(196, 230, 233));
+  position: fixed;
   display: grid;
   grid-template-columns: 100px 1fr;
   grid-template-rows: 8vh 92vh;
@@ -33,8 +35,11 @@ body {
 
 
 .sidebar {
+
+
   grid-area: sidebar;
   background-color: black;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,12 +67,15 @@ body {
 
 .main {
   grid-area: main;
+
+
 }
 
 @media screen and (max-width: 700px) {
   .sidebar {
     flex-direction: row;
   }
+
   .container {
     grid-template-areas:
          "sidebar sidebar"
@@ -117,7 +125,6 @@ i {
 /* Welcome */
 .welcome {
   text-align: center;
-  background-color: rgb(96, 172, 179);
   color: white;
   font-weight: 300;
   font-size: calc(30px + 2vmin);
@@ -150,24 +157,48 @@ i {
 
 /*  About */
 .about {
-  background-image: linear-gradient(rgb(67, 106, 108),rgb(38, 191, 199));
-  color: white;
+  color:rgb(85, 85, 85);
 }
 
 .about-container {
   display:grid;
-  grid-template-columns: 20vw 60vw;
-  grid-template-rows: 50vh 30vh;
-  grid-gap: 1rem;
+  grid-template-rows:80px 20vh 350px 1fr ;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5vh;
   grid-template-areas:
-       "title image-container"
-       "title bio-content";
+       "title "
+       "traits "
+       "image-container"
+       " bio-content ";
 
 }
 
 .profile-image {
-  height: 20vh;
-  width: 15vw;
+  height: 300px;
+  width: 180px;
+  border: solid 5px white;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 700px) {
+
+  .profile-image {
+    height: 200px;
+    width: 140px;
+  }
+
+  .about-container {
+    grid-template-rows:70px 40vh 220px 1fr ;
+    grid-template-areas:
+       "title title"
+       "traits traits"
+       "image-container image-container"
+       "bio-content bio-content ";
+     }
+
+  .traits div {
+    min-width: 40vw
+  }
 }
 
 .title {
@@ -178,16 +209,64 @@ i {
   justify-content: center;
 }
 
+.traits {
+  grid-area: traits;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+
+  font-size: calc(10px + 1vmin);
+}
+.traits span {
+  font-size: calc(20px + 1vmin);
+}
+
+.traits > div {
+  border: solid 1px white ;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 20vw;
+  margin: 5px;
+  padding: 5px;
+
+}
+
+.title > h1 {
+  padding: 5px;
+  border-bottom: solid 0.5px white;
+  border-radius: 10px;
+}
+
 .image-container{
   grid-area: image-container;
+
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 .bio-content{
   grid-area: bio-content;
-  font-size:
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.bio-content div {
+  width:70%;
+  padding: 5px;
+  border: solid 1px white ;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: calc(10px + 1vmin);
 }
 
 .rotate270 {
