@@ -36,7 +36,6 @@ body {
 
 .sidebar {
 
-
   grid-area: sidebar;
   background-color: black;
 
@@ -203,7 +202,6 @@ i {
 
 .title {
   grid-area: title;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,15 +209,14 @@ i {
 
 .traits {
   grid-area: traits;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   align-content: center;
-
   font-size: calc(10px + 1vmin);
 }
+
 .traits span {
   font-size: calc(20px + 1vmin);
 }
@@ -233,6 +230,7 @@ i {
   padding: 5px;
 
 }
+
 
 .title > h1 {
   padding: 5px;
@@ -269,10 +267,80 @@ i {
   font-size: calc(10px + 1vmin);
 }
 
-.rotate270 {
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
+/* Skills section  */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-gap: 1vh;
+  grid-template-areas:
+  " skills-title "
+  " detailed ";
+}
+
+.skills {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; */
+
+  color:rgb(85, 85, 85);
+}
+
+.skills-title {
+  grid-area: skills-title;
+
+}
+
+.detailed {
+  grid-area: detailed;
+  display: flex;
+  justify-content: center;
+
+}
+
+.detailed > div {
+  width:70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-content: flex-start;
+}
+
+div#detailed svg{
+  font-size: calc(50px + 1vmin);
+}
+
+div#detailed img {
+  height: calc(50px + 1vmin);
+}
+
+div#detailed h3{
+  margin:0;
+}
+
+.skill{
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px white ;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+}
+
+@media screen and (max-width: 700px) {
+
+  div#detailed svg{
+    font-size: calc(30px + 1vmin);
+  }
+
+  div#detailed img {
+    height: calc(30px + 1vmin);
+  }
+
+  div#detailed div{
+    margin: 5px;
+  }
+
 }
