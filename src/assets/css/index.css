@@ -66,8 +66,6 @@ body {
 
 .main {
   grid-area: main;
-
-
 }
 
 @media screen and (max-width: 700px) {
@@ -90,6 +88,7 @@ body {
 }
 
 section{
+  color:rgb(85, 85, 85);
   min-height: 100vh;
 }
 
@@ -272,18 +271,18 @@ i {
 .skills-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px 1fr;
+  grid-template-rows: 0.5fr 1fr;
   grid-gap: 1vh;
   grid-template-areas:
-  " skills-title "
-  " detailed ";
+  "skills-title"
+  "detailed";
 }
 
 .skills {
-  /* display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
-  text-align: center; */
+  text-align: center;
 
   color:rgb(85, 85, 85);
 }
@@ -297,7 +296,6 @@ i {
   grid-area: detailed;
   display: flex;
   justify-content: center;
-
 }
 
 .detailed > div {
@@ -331,6 +329,10 @@ div#detailed h3{
 
 @media screen and (max-width: 700px) {
 
+  .skills-container {
+    grid-template-rows: 80px 1fr;
+  }
+
   div#detailed svg{
     font-size: calc(30px + 1vmin);
   }
@@ -343,4 +345,86 @@ div#detailed h3{
     margin: 5px;
   }
 
+}
+/*  Projects Cards*/
+
+.project-card {
+  margin: 5px;
+
+  border: solid 1px white ;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+
+  width: calc(350px + 1vmin);
+
+  height:35vh;
+}
+
+.project-image {
+  height: 90%;
+}
+
+.project-image > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 0px 20px 0px;
+}
+.project-title {
+  height: 10%;
+}
+
+.project-title > h3{
+  margin: 0;
+  padding: 5px;
+}
+
+.project-card:hover {
+  background-color: white;
+  color:black;
+}
+
+.project-back > p{
+  font-size: calc(30px + 1vmin);
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.project-link {
+  padding: 5px;
+  margin: 0 10px;
+  border: solid 1px rgb(152, 152, 152);
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+
+}
+.project-link:hover {
+  background-color:rgb(108, 208, 202)
+}
+
+.project-link a {
+  text-decoration: none;
+  color: rgb(152, 152, 152);
+}
+
+/*  Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
 }

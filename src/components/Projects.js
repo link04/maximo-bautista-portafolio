@@ -1,4 +1,6 @@
 import React from 'react';
+import ProjectCard from './ProjectCard';
+
 
 export default class Projects extends React.Component {
 
@@ -6,16 +8,17 @@ export default class Projects extends React.Component {
 
     return(
       <section id="projects" className="projects" >
-        <p>
-          <span className="name-color" >Maximo Bautista</span>
-          <br/>
-          I'm a Full-stack Web Developer
-        </p>
 
-        <div className="next-button" >
-          <a  href="#about" >
-            <i className="arrow down"></i>
-          </a>
+        <div className="title" >
+          <h1>Projects</h1>
+        </div>
+
+        <div className="projects-container" >
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+
         </div>
 
       </section>
