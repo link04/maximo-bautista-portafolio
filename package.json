@@ -2,6 +2,7 @@
   "name": "maximo-bautista-portafolio",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://link04.github.io/maximo-bautista-portafolio/",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
