@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/maximo-bautista-portafolio/static/css/main.16f562a3.chunk.css",
+    "main.js": "/maximo-bautista-portafolio/static/js/main.93a126bc.chunk.js",
+    "main.js.map": "/maximo-bautista-portafolio/static/js/main.93a126bc.chunk.js.map",
+    "runtime~main.js": "/maximo-bautista-portafolio/static/js/runtime~main.7432ed6e.js",
+    "runtime~main.js.map": "/maximo-bautista-portafolio/static/js/runtime~main.7432ed6e.js.map",
+    "static/js/2.5646c6a5.chunk.js": "/maximo-bautista-portafolio/static/js/2.5646c6a5.chunk.js",
+    "static/js/2.5646c6a5.chunk.js.map": "/maximo-bautista-portafolio/static/js/2.5646c6a5.chunk.js.map",
+    "index.html": "/maximo-bautista-portafolio/index.html",
+    "precache-manifest.910a7931afd4ba57fa6fe5be1ea5a926.js": "/maximo-bautista-portafolio/precache-manifest.910a7931afd4ba57fa6fe5be1ea5a926.js",
+    "service-worker.js": "/maximo-bautista-portafolio/service-worker.js",
+    "static/css/main.16f562a3.chunk.css.map": "/maximo-bautista-portafolio/static/css/main.16f562a3.chunk.css.map",
+    "static/media/coffee-shop-blogs.png": "/maximo-bautista-portafolio/static/media/coffee-shop-blogs.4d7eb9df.png",
+    "static/media/craveme-screenshot.png": "/maximo-bautista-portafolio/static/media/craveme-screenshot.0408c35b.png",
+    "static/media/js-tic-tac-toe.png": "/maximo-bautista-portafolio/static/media/js-tic-tac-toe.11f38c6e.png",
+    "static/media/mysql.svg": "/maximo-bautista-portafolio/static/media/mysql.c5f5ed37.svg",
+    "static/media/postgresql.svg": "/maximo-bautista-portafolio/static/media/postgresql.85af0412.svg",
+    "static/media/profile1.jpg": "/maximo-bautista-portafolio/static/media/profile1.21fe4cae.jpg",
+    "static/media/profile2.jpg": "/maximo-bautista-portafolio/static/media/profile2.989ba138.jpg",
+    "static/media/rails.svg": "/maximo-bautista-portafolio/static/media/rails.0164c3a1.svg",
+    "static/media/redux.svg": "/maximo-bautista-portafolio/static/media/redux.04bf1646.svg",
+    "static/media/ruby.svg": "/maximo-bautista-portafolio/static/media/ruby.d96960c8.svg",
+    "static/media/tom-pilgrim-vs-the-universe.png": "/maximo-bautista-portafolio/static/media/tom-pilgrim-vs-the-universe.36462ab5.png",
+    "static/media/triforce.png": "/maximo-bautista-portafolio/static/media/triforce.561bad2c.png",
+    "static/media/triforce.svg.png": "/maximo-bautista-portafolio/static/media/triforce.svg.0ec54958.png"
+  }
+}
