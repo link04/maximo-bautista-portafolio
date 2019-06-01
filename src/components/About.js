@@ -32,7 +32,8 @@ export default class About extends React.Component {
                 <p>
                   Full stack web developer with a passion for finding answers and solutions to issues of life.
                   With experience in Ruby on Rails, JavaScript, Redux, and React and a background in customer service interactions.
-                   He was right! I bring strong skills in user experience and debugging that helps innovative companies build user-focused and easy-to-use websites and applications. I also make my own video games.
+                 He was right! I bring strong skills in user experience and debugging that helps innovative companies build user-focused and easy-to-use websites and applications.
+                 I also make my own video games.
                 </p>
               </div>
         </div>

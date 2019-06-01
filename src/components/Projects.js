@@ -1,11 +1,13 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-
+import { projects } from '../data';
 
 export default class Projects extends React.Component {
 
   render(){
-
+      const projectsArray = projects.map(project => {
+        return  <ProjectCard key={project.id} project={project} />
+      })
     return(
       <section id="projects" className="projects" >
 
@@ -14,11 +16,7 @@ export default class Projects extends React.Component {
         </div>
 
         <div className="projects-container" >
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-
+          {projectsArray}
         </div>
 
       </section>

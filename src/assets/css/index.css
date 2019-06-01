@@ -56,7 +56,7 @@ body {
 
 .sidebar a.active {
   color: rgb(44, 159, 215);
-  border: solid 0.50px  rgb(44, 159, 215);
+  border: solid 0.50px rgb(44, 159, 215);
 }
 
 .sidebar a:hover:not(.active) {
@@ -143,8 +143,8 @@ i {
 .next-button {
   margin: 10px 6px;
   padding: 20px;
-  animation: bounce 1s ease-in-out infinite;
-   -webkit-animation: bounce 1s ease-in-out infinite;
+  animation: bounce 0.75s ease-in-out infinite;
+   -webkit-animation: bounce 0.75s ease-in-out infinite;
 }
 
 @keyframes bounce {
@@ -354,26 +354,34 @@ div#detailed h3{
   border: solid 1px white ;
   border-radius: 20px;
   border-bottom-left-radius: 0px;
-
   width: calc(350px + 1vmin);
-
   height:35vh;
+
+  position: relative;
+
+}
+
+.project-title {
+  height: 10%;
 }
 
 .project-image {
   height: 90%;
 }
 
+
 .project-image > img {
   height: 100%;
   width: 100%;
   border-radius: 0px 0px 20px 0px;
 }
-.project-title {
-  height: 10%;
+
+.project-card h3{
+  margin: 2px;
+  padding: 5px;
 }
 
-.project-title > h3{
+.project-card p{
   margin: 0;
   padding: 5px;
 }
@@ -381,6 +389,10 @@ div#detailed h3{
 .project-card:hover {
   background-color: white;
   color:black;
+}
+
+.project-front {
+  height: 100%;
 }
 
 .project-back > p{
@@ -396,16 +408,26 @@ div#detailed h3{
 }
 
 .project-link {
+  position: absolute;
+  bottom: 0;
+}
+
+.project-link {
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.project-link > a {
   padding: 5px;
   margin: 0 10px;
   border: solid 1px rgb(152, 152, 152);
   border-radius: 10px;
   color: white;
   text-decoration: none;
-
 }
-.project-link:hover {
-  background-color:rgb(108, 208, 202)
+
+.project-link > a:hover {
+  background-color:rgb(108, 208, 202);
 }
 
 .project-link a {
@@ -427,4 +449,44 @@ div#detailed h3{
   justify-content: center;
   text-align: center;
   align-content: center;
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-link {
+  background-color: rgb(158, 236, 241);
+  color: rgb(124, 124, 124);
+
+  font-size: 5vh;
+  padding: 5px;
+  margin: 10px;
+
+  border-radius: 10px;
+
+  display:inline-block;
+}
+
+.contact-link:hover{
+  color: rgb(44, 159, 215);
+  background-color: rgb(0, 0, 0);
+
+  animation: rotate 2s ;
+  -webkit-animation: rotate 1s ;
+}
+
+
+@keyframes rotate {
+  0%   {}
+  100% {transform: rotate(-360deg);}
+}
+@-webkit-keyframes rotate {
+  0%   {}
+  100% {-webkit-transform: rotate(-360deg);}
 }
