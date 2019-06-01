@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d751233c0ff1f835aa57b2590b77bb16",
+    "revision": "a01deeef9710f7ab51bc3b48d74b85f5",
     "url": "/maximo-bautista-portafolio/index.html"
   },
   {
-    "revision": "ef3b9e841ae47e246a6a",
-    "url": "/maximo-bautista-portafolio/static/css/main.16f562a3.chunk.css"
+    "revision": "9e924d5e16a12ef3dc60",
+    "url": "/maximo-bautista-portafolio/static/css/main.5c4c6ed9.chunk.css"
   },
   {
     "revision": "6cbf32e6e7458f998581",
     "url": "/maximo-bautista-portafolio/static/js/2.5646c6a5.chunk.js"
   },
   {
-    "revision": "ef3b9e841ae47e246a6a",
-    "url": "/maximo-bautista-portafolio/static/js/main.93a126bc.chunk.js"
+    "revision": "9e924d5e16a12ef3dc60",
+    "url": "/maximo-bautista-portafolio/static/js/main.bb6935d6.chunk.js"
   },
   {
     "revision": "d9d3aa583cc9c93303c4",

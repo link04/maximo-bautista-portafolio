@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/maximo-bautista-portafolio/precache-manifest.910a7931afd4ba57fa6fe5be1ea5a926.js"
+  "/maximo-bautista-portafolio/precache-manifest.94fea4e9c0e158328c356d3aa6832043.js"
 );
 
 self.addEventListener('message', (event) => {
