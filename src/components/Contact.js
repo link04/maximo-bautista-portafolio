@@ -33,6 +33,12 @@ export default class Contact extends React.Component {
           </a>
 
         </div>
+        <div className="button-container">
+          <a  href="#welcome" className="go-up-button" >
+            <i className="arrow up"></i>
+          </a>
+        </div>
+
       </section>
     );
 

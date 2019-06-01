@@ -17,7 +17,7 @@ export default class About extends React.Component {
             </div>
             <div>
               <span><i className="fas fa-bug"></i></span>
-              <p>Because of how efficient(stubborn) I am, no bug is save from debugging.</p>
+              <p>Because of how efficient(stubborn) I am, no bug is safe from debugging.</p>
             </div>
             <div>
               <span><i className="fas fa-search"></i></span>

@@ -97,22 +97,12 @@ section{
   text-align: center;
 }
 
-.welcome i {
+.arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 8px;
   box-shadow: 20px 13px 20px black;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
 }
 
 .up {
@@ -247,7 +237,7 @@ section{
 }
 
 .detailed > div {
-  width:70vw;
+  width:80vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -256,38 +246,37 @@ section{
 }
 
 div#detailed svg{
-  font-size: calc(50px + 1vmin);
+  font-size: calc(40px + 1vmin);
 }
 
 div#detailed img {
-  height: calc(50px + 1vmin);
+  height: calc(40px + 1vmin);
 }
 
 div#detailed h3{
-  margin:0;
+  font-size: calc(10px + 1vmin);
+  margin: 0;
+
 }
 
 .skill{
+
   margin: 10px;
   padding: 10px;
   border: solid 1px white ;
   border-radius: 20px;
   border-bottom-right-radius: 0px;
+
+  width: calc(6vw + 6vh);
+
+  font-size: calc(8px + 1vmin);
 }
+
+
 
 @media screen and (max-width: 700px) {
 
-  .skills-container {
-    grid-template-rows: 80px 1fr;
-  }
 
-  div#detailed svg{
-    font-size: calc(30px + 1vmin);
-  }
-
-  div#detailed img {
-    height: calc(30px + 1vmin);
-  }
 
   div#detailed div{
     margin: 5px;
@@ -431,4 +420,26 @@ div#detailed h3{
 @-webkit-keyframes rotate {
   0%   {}
   100% {-webkit-transform: rotate(-360deg);}
+}
+
+.button-container {
+  display: flex;
+  bottom:0;
+}
+
+.button-container .arrow  {
+  box-shadow:none;
+
+}
+
+.go-up-button {
+  height: 20px;
+  width: 20px;
+
+  margin: 50px;
+  padding: 20px;
+
+
+  animation: bounce 0.75s ease-in-out infinite;
+   -webkit-animation: bounce 0.75s ease-in-out infinite;
 }
