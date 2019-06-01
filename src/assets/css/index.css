@@ -1,18 +1,22 @@
 html {
   scroll-behavior: smooth;
   overflow: hidden;
-
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Titillium Web', sans-serif;
   overflow: hidden;
+  line-height: 18px;
+}
 
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;
+  background-color:#ffffff;
+  height: 1px;
 }
 
 .container {
@@ -33,12 +37,9 @@ body {
   scroll-behavior: smooth;
 }
 
-
 .sidebar {
-
   grid-area: sidebar;
   background-color: black;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,9 +91,13 @@ body {
 section{
   color:rgb(85, 85, 85);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-i {
+.welcome i {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -119,21 +124,16 @@ i {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
 /* Specific Sections Syle */
 /* Welcome */
 .welcome {
-  text-align: center;
   color: white;
-  font-weight: 300;
   font-size: calc(30px + 2vmin);
+  line-height: normal;
   text-shadow: 13px 11px 20px black;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   color: white;
+  justify-content: center;
 }
 
 .name-color{
@@ -158,41 +158,19 @@ i {
   color:rgb(85, 85, 85);
 }
 
-.about-container {
-  display:grid;
-  grid-template-rows:80px 20vh 350px 1fr ;
-  grid-template-columns: 1fr;
-  grid-gap: 0.5vh;
-  grid-template-areas:
-       "title "
-       "traits "
-       "image-container"
-       " bio-content ";
-
-}
-
 .profile-image {
-  height: 300px;
-  width: 180px;
+  margin: 5px;
+  height: inherit;
+  width: inherit;
   border: solid 5px white;
   border-radius: 20px;
 }
 
 @media screen and (max-width: 700px) {
 
-  .profile-image {
-    height: 200px;
-    width: 140px;
+  .about {
+    line-height: 15px;
   }
-
-  .about-container {
-    grid-template-rows:70px 40vh 220px 1fr ;
-    grid-template-areas:
-       "title title"
-       "traits traits"
-       "image-container image-container"
-       "bio-content bio-content ";
-     }
 
   .traits div {
     min-width: 40vw
@@ -200,19 +178,16 @@ i {
 }
 
 .title {
-  grid-area: title;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: calc(20px + 1vmin);
+  margin: 10px;
+  border-bottom: solid 0.5px white;
+  border-radius: 10px;
 }
 
 .traits {
-  grid-area: traits;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
-  align-content: center;
   font-size: calc(10px + 1vmin);
 }
 
@@ -227,38 +202,24 @@ i {
   width: 20vw;
   margin: 5px;
   padding: 5px;
-
 }
 
-
-.title > h1 {
-  padding: 5px;
-  border-bottom: solid 0.5px white;
-  border-radius: 10px;
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-container{
-  grid-area: image-container;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+  width: calc(40vw * 40vh);
+  height: 40vh;
 }
 
-.bio-content{
-  grid-area: bio-content;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.bio-content div {
-  width:70%;
+.bio-content {
+  width: 50vw;
+  margin: 20px 0 20px 0;
   padding: 5px;
   border: solid 1px white ;
   border-top-left-radius: 20px;
@@ -266,22 +227,10 @@ i {
   font-size: calc(10px + 1vmin);
 }
 
-/* Skills section  */
-
-.skills-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr;
-  grid-gap: 1vh;
-  grid-template-areas:
-  "skills-title"
-  "detailed";
-}
+/* Skills */
 
 .skills {
-  /* display: flex; */
   align-items: center;
-  justify-content: center;
   text-align: center;
 
   color:rgb(85, 85, 85);
@@ -289,7 +238,6 @@ i {
 
 .skills-title {
   grid-area: skills-title;
-
 }
 
 .detailed {
@@ -369,7 +317,6 @@ div#detailed h3{
   height: 90%;
 }
 
-
 .project-image > img {
   height: 100%;
   width: 100%;
@@ -437,27 +384,20 @@ div#detailed h3{
 
 /*  Projects */
 .projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
 }
 
 .projects-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
-  align-content: center;
+
 }
 
 /* Contact */
 
 .contact {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
+
 }
 
 .contact-link {
@@ -470,7 +410,9 @@ div#detailed h3{
 
   border-radius: 10px;
 
-  display:inline-block;
+  display:block;
+  /* display:inline-block; */
+
 }
 
 .contact-link:hover{

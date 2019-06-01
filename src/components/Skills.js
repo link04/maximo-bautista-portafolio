@@ -21,10 +21,10 @@ export default class Skills extends React.Component {
 
     return(
       <section id="skills" className="skills skills-container" >
-          <div className="skills-title title" >
+          <div className="title" >
             <h1>Skills</h1>
           </div>
-
+          <hr/>
           <div id="detailed" className="detailed" >
             <div>
               {mappedSkills}

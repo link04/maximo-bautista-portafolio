@@ -9,7 +9,7 @@ export default class Contact extends React.Component {
         <div className="title" >
           <h1>Contact</h1>
         </div>
-
+        <hr/>
         <div className="contact-methods" >
 
           <a className="contact-link" href="https://www.linkedin.com/in/maximo-bautista-480786a6/" target="_blank" rel="noopener noreferrer" >

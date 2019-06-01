@@ -14,7 +14,7 @@ export default class Projects extends React.Component {
         <div className="title" >
           <h1>Projects</h1>
         </div>
-
+        <hr/>
         <div className="projects-container" >
           {projectsArray}
         </div>
