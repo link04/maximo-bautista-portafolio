@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: 'Titillium Web', sans-serif;
   overflow: hidden;
-  line-height: 18px;
+  line-height: 25px;
 }
 
 hr {
@@ -204,7 +204,7 @@ section{
 
 .image-container{
   width: calc(40vw * 40vh);
-  height: 40vh;
+  height: 35vh;
 }
 
 .bio-content {
@@ -299,11 +299,11 @@ div#detailed h3{
 }
 
 .project-title {
-  height: 10%;
+  height: 15%;
 }
 
 .project-image {
-  height: 90%;
+  height: 85%;
 }
 
 .project-image > img {
@@ -392,11 +392,9 @@ div#detailed h3{
 .contact-link {
   background-color: rgb(158, 236, 241);
   color: rgb(124, 124, 124);
-
   font-size: 5vh;
   padding: 5px;
   margin: 10px;
-
   border-radius: 10px;
 
   display:block;
@@ -407,7 +405,6 @@ div#detailed h3{
 .contact-link:hover{
   color: rgb(44, 159, 215);
   background-color: rgb(0, 0, 0);
-
   animation: rotate 2s ;
   -webkit-animation: rotate 1s ;
 }
@@ -429,17 +426,13 @@ div#detailed h3{
 
 .button-container .arrow  {
   box-shadow:none;
-
 }
 
 .go-up-button {
   height: 20px;
   width: 20px;
-
   margin: 50px;
   padding: 20px;
-
-
   animation: bounce 0.75s ease-in-out infinite;
    -webkit-animation: bounce 0.75s ease-in-out infinite;
 }

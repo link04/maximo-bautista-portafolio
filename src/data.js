@@ -82,9 +82,10 @@ export const skills = [
   {
     name: 'Git',
     fontIcon: 'fab fa-git'
-  },
-  {
-    name: 'Github',
-    fontIcon: 'fab fa-github'
-  },
+  }
+  // ,
+  // {
+  //   name: 'Github',
+  //   fontIcon: 'fab fa-github'
+  // },
 ];

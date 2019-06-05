@@ -28,7 +28,7 @@ export default class Contact extends React.Component {
             <i className="far fa-envelope"></i>
           </a>
 
-          <a className="contact-link" href="#contact" target="_blank" rel="noopener noreferrer" >
+          <a className="contact-link" href="https://drive.google.com/file/d/1woiwYFwoaWQXs6z2xhvHlXP5xOq9Q6k9/view?usp=sharing" target="_blank" rel="noopener noreferrer" >
             <i className="far fa-file-alt"></i>
           </a>
 
