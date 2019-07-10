@@ -19,13 +19,21 @@ class App extends React.Component {
    }
 
   userView = () => {
-    const main = document.querySelector('.main');
-      var winScroll = main.scrollTop;
-      var height = main.scrollHeight - main.clientHeight;
-      var scrolled = (winScroll / height) * 100;
+
+      const main = document.querySelector('.main');
+
+      // var winScroll = main.scrollTop;
+      // var height = main.scrollHeight - main.clientHeight;
+      // var scrolled = (winScroll / height) * 100;
+
+      let winScroll = main.scrollLeft;
+      let width = main.scrollWidth - main.clientWidth;
+      let scrolled = (winScroll / width) * 100;
+
       this.setState({
         actualViewScrolled: scrolled
       })
+
     }
 
   activeLink = (linkName) => {
@@ -42,16 +50,24 @@ class App extends React.Component {
     }
   }
 
+
 render(){
     return (
       <div className="container">
-        <Sidebar activeLink={this.activeLink} />
+        <Sidebar  activeLink={this.activeLink} />
         <div className="main">
+
+
           <Welcome />
+
           <About />
+
           <Skills />
+
           <Projects />
+
           <Contact />
+
         </div>
       </div>
     );

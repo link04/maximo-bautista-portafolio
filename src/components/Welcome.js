@@ -6,18 +6,17 @@ export default class Welcome extends React.Component {
 
     return(
       <section id="welcome" className="welcome" >
-        <p>
-          <span className="name-color" >Maximo Bautista</span>
-          <br/>
-          I'm a Full-stack Web Developer
-        </p>
+          <p>
+            <span className="name-color" >Maximo Bautista</span>
+            <br/>
+            I'm a Full-stack Web Developer
+          </p>
 
-        <div className="next-button" >
-          <a  href="#about" >
-            <i className="arrow down"></i>
-          </a>
-        </div>
-
+          <div className="next-button" >
+            <a  href="#about" >
+              <i className="arrow down"></i>
+            </a>
+          </div>
       </section>
     );
 
