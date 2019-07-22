@@ -22,13 +22,13 @@ class App extends React.Component {
 
       const main = document.querySelector('.main');
 
-      // var winScroll = main.scrollTop;
-      // var height = main.scrollHeight - main.clientHeight;
-      // var scrolled = (winScroll / height) * 100;
+      var winScroll = main.scrollTop;
+      var height = main.scrollHeight - main.clientHeight;
+      var scrolled = (winScroll / height) * 100;
 
-      let winScroll = main.scrollLeft;
-      let width = main.scrollWidth - main.clientWidth;
-      let scrolled = (winScroll / width) * 100;
+      // let winScroll = main.scrollLeft;
+      // let width = main.scrollWidth - main.clientWidth;
+      // let scrolled = (winScroll / width) * 100;
 
       this.setState({
         actualViewScrolled: scrolled
