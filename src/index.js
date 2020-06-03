@@ -6,9 +6,13 @@ import './assets/css/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-window.DD_RUM && window.DD_RUM.init({
-  clientToken: 'pubb3ff4bcdd5af1c9c05f965d34edafdd9',
-  applicationId: '0234e0ff-65dd-4f50-a443-8aee8686d493',
+import { datadogRum } from '@datadog/browser-rum';
+
+datadogRum.init({
+    applicationId: '0234e0ff-65dd-4f50-a443-8aee8686d493',
+    clientToken: 'pubb3ff4bcdd5af1c9c05f965d34edafdd9',
+    datacenter: 'us',
+    sampleRate: 100,
 });
 
 ReactDOM.render(<App />, document.getElementById('root'));
